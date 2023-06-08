@@ -10,9 +10,9 @@ fn main() {
     looper(get_parameters());
 }
 fn get_parameters() -> Vec<u64> {
-    let default_parameters = vec![600, 1500, 10];
+    let default_parameters = vec![600, 1200, 10];
     let mut parameters = default_parameters.clone();
-    println!("Enter min(600), max(1500), gap(10) in seconds");
+    println!("Enter min(600), max(1200), gap(10) in seconds");
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
     clear().expect("failed to clear screen");
