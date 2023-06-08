@@ -1,8 +1,7 @@
 use clearscreen::clear;
 use rand::Rng;
 use rodio::{source::Source, Decoder, OutputStream};
-//use std::fs::File;
-//use std::io::BufReader;
+
 use std::io::{self, Write};
 use std::thread;
 use std::time::Duration;
@@ -83,16 +82,3 @@ fn start_countdown(seconds: u64, settings: &str) {
         thread::sleep(Duration::from_secs_f32(1.0));
     }
 }
-
-/* fn delete_previous_line() {
-    use crossterm::{
-        cursor::MoveToPreviousLine,
-        terminal::{Clear, ClearType},
-        ExecutableCommand,
-    };
-    std::io::stdout().execute(MoveToPreviousLine(1)).unwrap();
-    std::io::stdout()
-        .execute(Clear(ClearType::CurrentLine))
-        .unwrap();
-}
- */
