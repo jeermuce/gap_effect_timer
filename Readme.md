@@ -2,14 +2,42 @@
 
 The Spacing Effect Timer is a Rust-based command-line application designed to facilitate activities requiring random interval timing. It's ideal for repetitive tasks that benefit from randomized time intervals. This project was also a fun way for me to learn Rust.
 
+## Installation
+
+To install the Spacing Effect Timer, you will need Rust and Cargo installed on your system.
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/jeermuce/spacing_effect_timer.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd spacing_effect_timer
+```
+
+3. Build the project using Cargo:
+
+```bash
+cargo build --release
+```
+
+4. The executable will be located in `target/release/`.
+
 ## Usage
 
-1. Set the minimum and maximum length of the timer as numbers, separated by a space.
-2. Hit enter.
-3. Do your thing until the audio notification plays.
-4. When it does, close your eyes and wait for the second audio notification, but don't think about it, just relax, and let what just happened sink in.
-5. When it plays, open your eyes and repeat the process.
-6. When you're done, hit ctrl-c to exit the application.
+1. Run the executable either by double-clicking it or by running it from the command line.
+    1. ```bash
+       ./spacing_effect_timer
+       ```
+2. Set the minimum and maximum length of the timer as numbers, separated by a space.
+3. Hit enter.
+4. Do your thing until the audio notification plays.
+5. When it does, close your eyes and wait for the second audio notification, but don't think about it, just relax, and let what just happened sink in.
+6. When it plays, open your eyes and repeat the process.
+7. When you're done, hit ctrl-c to exit the application.
 
 ## Dependencies
 
@@ -17,7 +45,10 @@ The Spacing Effect Timer is a Rust-based command-line application designed to fa
 -   crossterm: To handle cross-platform terminal input and output.
 -   rand: For generating random countdown intervals.
 -   rodio: To play audio notifications.
--   winresource: To embed metadata in the Windows executable.
+
+## Contact Information
+
+For questions, feedback, or contributions, please open an issue on the repository, or contact us at [ernesto_mc.dev@proton.me](mailto:ernesto_mc.dev@proton.me)
 
 ## Note on Audio Files
 
