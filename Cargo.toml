@@ -20,6 +20,7 @@ debug = false
 strip = true
 debug-assertions = false
 incremental = false
+
 [build-dependencies]
 winresource = "0.1.17"
 
