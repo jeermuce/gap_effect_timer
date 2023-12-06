@@ -312,17 +312,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 
 [[package]]
-name = "spacing_effect_timer"
-version = "1.0.0"
-dependencies = [
- "clearscreen",
- "crossterm",
- "rand",
- "rodio",
- "winresource",
-]
-
-[[package]]
 name = "getrandom"
 version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -982,6 +971,17 @@ name = "smallvec"
 version = "1.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4dccd0940a2dcdf68d092b8cbab7dc0ad8fa938bf95787e1b916b0e3d0e8e970"
+
+[[package]]
+name = "spacing_effect_timer"
+version = "1.0.0"
+dependencies = [
+ "clearscreen",
+ "crossterm",
+ "rand",
+ "rodio",
+ "winresource",
+]
 
 [[package]]
 name = "symphonia"

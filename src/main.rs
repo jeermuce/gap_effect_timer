@@ -9,7 +9,7 @@ fn main() {
     timer(get_parameters());
 }
 fn get_parameters() -> Vec<u64> {
-    println!("Enter min(600), max(1200) in seconds");
+    println!("Enter min(600), max(1200) in seconds: '600 1200'");
     let default_parameters = vec![600, 1200];
     let mut parameters = default_parameters.clone();
     let mut input = String::new();
@@ -54,7 +54,8 @@ fn sound_selector(counter_type: u8) {
     }
 }
 fn sound_player(sound: &'static [u8]) {
-    let (_stream, stream_handle) = OutputStream::try_default().expect("failed to get stream");
+    let (_stream, stream_handle) =
+        OutputStream::try_default().expect("failed to get stream");
     let cursor = io::Cursor::new(sound);
     let source = Decoder::new(cursor).expect("failed to decode mp3");
     stream_handle
