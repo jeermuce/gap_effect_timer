@@ -30,7 +30,7 @@ cargo build --release
 
 1. Run the executable either by double-clicking it or by running it from the command line.
     1. ```bash
-       .target/release/gap_effect_timer
+       ./target/release/gap_effect_timer
        ```
 2. Set the minimum and maximum length of the timer as numbers, separated by a space.
 3. Hit enter.
