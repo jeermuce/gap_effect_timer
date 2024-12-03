@@ -1,6 +1,6 @@
 [package]
 name = "spacing_effect_timer"
-description = "The Gap Effect Timer is a Rust-based command-line application designed to facilitate activities requiring random interval timing. It allows users to set a range for a countdown timer and a specific gap time. The application generates a random countdown within the user-defined range, provides a clear visual countdown interface, and plays distinct audio notifications at the end of the countdown and after the gap period. The looped functionality makes it ideal for repetitive tasks that benefit from randomized time intervals, such as certain training or study methods leveraging the psychological gap effect."
+description = "The Gap Effect Timer is a Rust-based command-line application designed to facilitate activities requiring random interval timing. It allows users to set a range for a countdown timer. The application generates a random countdown within the user-defined range, provides a clear visual countdown interface, and plays distinct audio notifications at the end of the countdown and after the gap period. Its useful for study methods leveraging the psychological gap effect."
 version = "1.0.0"
 edition = "2021"
 build = "build.rs"
@@ -8,23 +8,17 @@ build = "build.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clearscreen = "2.0.1"
-crossterm = "0.27.0"
+clearscreen = "3.0.0"
+crossterm = "0.28.1"
 rand = "0.8.5"
-rodio = "0.17.1"
-
-[profile.release]
-lto = true
-opt-level = "s"
-debug = false
-strip = true
-debug-assertions = false
-incremental = false
+rodio = "0.20.1"
 
 [build-dependencies]
-winresource = "0.1.17"
+winresource = "0.1.19"
+
+
 
 [package.metadata.winresource]
 ProductName = "Gap Effect Timer"
 LegalCopyright = "Copyright © 2023 jeermuce"
-OriginalFilename = "GapEffectTimer.exe"
+OriginalFilename = "spacing_effect_timer"
