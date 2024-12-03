@@ -9,13 +9,13 @@ To install the Spacing Effect Timer, you will need Rust and Cargo installed on y
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/jeermuce/spacing_effect_timer.git
+git clone https://github.com/jeermuce/gap_effect_timer.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd spacing_effect_timer
+cd gap_effect_timer
 ```
 
 3. Build the project using Cargo:
@@ -30,7 +30,7 @@ cargo build --release
 
 1. Run the executable either by double-clicking it or by running it from the command line.
     1. ```bash
-       .target/release/spacing_effect_timer
+       .target/release/gap_effect_timer
        ```
 2. Set the minimum and maximum length of the timer as numbers, separated by a space.
 3. Hit enter.
