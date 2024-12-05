@@ -1,6 +1,6 @@
 [package]
 name = "gap_effect_timer"
-description = "The Gap Effect Timer is a Rust-based command-line application designed to facilitate activities requiring random interval timing. It allows users to set a range for a countdown timer. The application generates a random countdown within the user-defined range, provides a clear visual countdown interface, and plays distinct audio notifications at the end of the countdown and after the gap period. Its useful for study methods leveraging the psychological gap effect."
+description = "The Gap Effect Timer is a Rust-based command-line application designed to help study and work by breaking sessions with random breaks to reduce monotony. By allowing users to set custom minimum and maximum durations for work or study periods, the script randomly selects a time within this range and runs a countdown timer. Audible alerts signal the end of each session and break, using different sounds for clarity. Following each work or study period, a shorter countdown for a break begins, providing a clear structure to the user's routine. The process repeats indefinitely, alternating between focused sessions and breaks, ensuring consistent productivity and regular rest."
 version = "1.0.0"
 edition = "2021"
 build = "build.rs"
